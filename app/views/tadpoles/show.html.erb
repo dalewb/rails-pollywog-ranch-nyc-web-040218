@@ -13,6 +13,9 @@
   <a href="/tadpoles/<%= @tadpole.id %>/destroy">Delete</a>
 </div>
 
+
+<%= button_to "Become a frog", "/tadpoles/#{@tadpole.id}/metamorphose" , action: :post %>
+
 <div class="card">
   <img src="http://<%= @tadpole.color %>-tadpole.jpg.to/" alt="Tadpole Picture" width="300">
 </div>
